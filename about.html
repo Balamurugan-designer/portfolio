@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__logo" href="index.html">Your Name<span class="dot">.</span></a>
+  <nav class="nav__links">
+    <a href="index.html#work">Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="about">
+  <h1 class="reveal">About</h1>
+  <div class="about__grid">
+    <div class="about__body reveal">
+      <p>I'm a graphic and motion designer based in [City]. I work across identity,
+      motion systems and 3D — building visual languages that hold up in motion
+      as well as they do as a still.</p>
+      <p>[Second paragraph: where you've worked, what you studied, what kind of
+      briefs you're best at. Keep it to three short paragraphs max.]</p>
+      <p><a class="btn" href="assets/cv.pdf" target="_blank">Download CV</a></p>
+    </div>
+    <aside class="about__side reveal">
+      <h3>Capabilities</h3>
+      <ul><li>Brand identity</li><li>Motion design</li><li>3D / CGI</li><li>Art direction</li></ul>
+      <h3>Tools</h3>
+      <ul><li>After Effects</li><li>Cinema 4D</li><li>Illustrator</li><li>Figma</li></ul>
+      <h3>Contact</h3>
+      <ul><li><a href="mailto:you@yourdomain.com">you@yourdomain.com</a></li></ul>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Your Name</span>
+</footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

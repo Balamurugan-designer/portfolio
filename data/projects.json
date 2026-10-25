@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "nocturne",
+    "title": "Nocturne",
+    "category": "Motion",
+    "year": "2025",
+    "client": "Self-initiated",
+    "role": "Direction, 3D, Edit",
+    "tools": "Cinema 4D, Redshift, After Effects",
+    "thumb": "assets/img/nocturne-thumb.jpg",
+    "poster": "assets/img/nocturne-poster.jpg",
+    "video": { "type": "vimeo", "id": "76979871" },
+    "summary": "A short film about light as a physical material.",
+    "body": [
+      "Replace this with 2–4 short paragraphs. What was the brief? What was the constraint that made it interesting? What did you actually do versus what the team did?",
+      "Hiring managers skim. Lead with the outcome, then the process. Keep each paragraph under 60 words."
+    ],
+    "gallery": [
+      "assets/img/nocturne-1.jpg",
+      "assets/img/nocturne-2.jpg",
+      "assets/img/nocturne-3.jpg"
+    ],
+    "credits": [
+      { "role": "Direction", "name": "Your Name" },
+      { "role": "3D", "name": "Your Name" },
+      { "role": "Sound", "name": "Collaborator" }
+    ],
+    "wide": true,
+    "featured": true
+  },
+  {
+    "slug": "halo-identity",
+    "title": "Halo — Brand Identity",
+    "category": "Graphic",
+    "year": "2025",
+    "client": "Halo Studio",
+    "role": "Identity, Art Direction",
+    "tools": "Illustrator, Figma, InDesign",
+    "thumb": "assets/img/halo-thumb.jpg",
+    "poster": "assets/img/halo-1.jpg",
+    "summary": "A modular identity system for a sound design studio.",
+    "body": [
+      "Placeholder case study text. Describe the problem the client had and the system you built to solve it.",
+      "Mention the deliverables: logotype, type system, motion principles, guidelines document."
+    ],
+    "gallery": ["assets/img/halo-1.jpg", "assets/img/halo-2.jpg"],
+    "credits": [{ "role": "Design", "name": "Your Name" }],
+    "wide": false,
+    "featured": true
+  },
+  {
+    "slug": "titles-01",
+    "title": "Main Title Sequence",
+    "category": "Motion",
+    "year": "2024",
+    "client": "Film / Series",
+    "role": "Design, Animation",
+    "tools": "After Effects, Illustrator",
+    "thumb": "assets/img/titles-thumb.jpg",
+    "poster": "assets/img/titles-poster.jpg",
+    "video": { "type": "youtube", "id": "aqz-KE-bpKQ" },
+    "summary": "Title design and animation for a short film.",
+    "body": ["Placeholder. Swap the YouTube ID above with your own video ID."],
+    "gallery": ["assets/img/titles-1.jpg"],
+    "credits": [{ "role": "Animation", "name": "Your Name" }],
+    "wide": false,
+    "featured": true
+  },
+  {
+    "slug": "editorial-series",
+    "title": "Editorial Series",
+    "category": "Graphic",
+    "year": "2024",
+    "client": "Magazine",
+    "role": "Layout, Typography",
+    "tools": "InDesign, Photoshop",
+    "thumb": "assets/img/editorial-thumb.jpg",
+    "poster": "assets/img/editorial-1.jpg",
+    "summary": "A six-spread editorial system built on a strict baseline grid.",
+    "body": ["Placeholder case study."],
+    "gallery": ["assets/img/editorial-1.jpg", "assets/img/editorial-2.jpg"],
+    "credits": [{ "role": "Design", "name": "Your Name" }],
+    "wide": false,
+    "featured": true
+  }
+]
