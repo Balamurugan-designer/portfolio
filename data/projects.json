@@ -21,8 +21,8 @@
       "assets/img/nocturne-3.jpg"
     ],
     "credits": [
-      { "role": "Direction", "name": "Your Name" },
-      { "role": "3D", "name": "Your Name" },
+      { "role": "Direction", "name": "Balamurugan P" },
+      { "role": "3D", "name": "Balamurugan P" },
       { "role": "Sound", "name": "Collaborator" }
     ],
     "wide": true,
@@ -44,7 +44,7 @@
       "Mention the deliverables: logotype, type system, motion principles, guidelines document."
     ],
     "gallery": ["assets/img/halo-1.jpg", "assets/img/halo-2.jpg"],
-    "credits": [{ "role": "Design", "name": "Your Name" }],
+    "credits": [{ "role": "Design", "name": "Balamurugan P" }],
     "wide": false,
     "featured": true
   },
@@ -62,7 +62,7 @@
     "summary": "Title design and animation for a short film.",
     "body": ["Placeholder. Swap the YouTube ID above with your own video ID."],
     "gallery": ["assets/img/titles-1.jpg"],
-    "credits": [{ "role": "Animation", "name": "Your Name" }],
+    "credits": [{ "role": "Animation", "name": "Balamurugan P" }],
     "wide": false,
     "featured": true
   },
@@ -79,7 +79,7 @@
     "summary": "A six-spread editorial system built on a strict baseline grid.",
     "body": ["Placeholder case study."],
     "gallery": ["assets/img/editorial-1.jpg", "assets/img/editorial-2.jpg"],
-    "credits": [{ "role": "Design", "name": "Your Name" }],
+    "credits": [{ "role": "Design", "name": "Balamurugan P" }],
     "wide": false,
     "featured": true
   }

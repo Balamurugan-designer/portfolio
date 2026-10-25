@@ -47,7 +47,7 @@
   const p = projects[i];
   const next = projects[(i + 1) % projects.length];
 
-  document.title = `${p.title} — Your Name`;
+  document.title = `${p.title} — Balamurugan P`;
   document.querySelector('meta[name="description"]')?.setAttribute('content', p.summary || '');
 
   root.innerHTML = `
