@@ -11,7 +11,7 @@
     addEventListener('scroll', onScroll, { passive: true });
   }
 
-  /* reveal on scroll - robust threshold & viewport checking */
+  /* reveal on scroll */
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
       if (e.isIntersecting) {
@@ -19,18 +19,10 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.05, rootMargin: '0px 0px -20px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px' });
 
   function observeReveals() {
-    document.querySelectorAll('.reveal:not(.is-in)').forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      // If already visible in the viewport on load, reveal smoothly without waiting for scroll
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        el.classList.add('is-in');
-      } else {
-        io.observe(el);
-      }
-    });
+    document.querySelectorAll('.reveal:not(.is-in)').forEach((el) => io.observe(el));
   }
   observeReveals();
 
@@ -75,20 +67,18 @@
 
     render(projects);
 
-    if (filtersEl) {
-      const cats = ['All', ...new Set(projects.map((p) => p.category))];
-      filtersEl.innerHTML = cats.map((c, i) =>
-        `<button data-filter="${c}" class="${i === 0 ? 'is-active' : ''}">${c}</button>`
-      ).join('');
+    const cats = ['All', ...new Set(projects.map((p) => p.category))];
+    filtersEl.innerHTML = cats.map((c, i) =>
+      `<button data-filter="${c}" class="${i === 0 ? 'is-active' : ''}">${c}</button>`
+    ).join('');
 
-      filtersEl.addEventListener('click', (e) => {
-        const btn = e.target.closest('button');
-        if (!btn) return;
-        filtersEl.querySelectorAll('button').forEach((b) => b.classList.toggle('is-active', b === btn));
-        const f = btn.dataset.filter;
-        render(f === 'All' ? projects : projects.filter((p) => p.category === f));
-      });
-    }
+    filtersEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      filtersEl.querySelectorAll('button').forEach((b) => b.classList.toggle('is-active', b === btn));
+      const f = btn.dataset.filter;
+      render(f === 'All' ? projects : projects.filter((p) => p.category === f));
+    });
   } catch (err) {
     grid.innerHTML = '<p class="loading">Could not load projects. Check data/projects.json.</p>';
     console.error(err);

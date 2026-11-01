@@ -10,15 +10,6 @@
     addEventListener('scroll', onScroll, { passive: true });
   }
 
-  /* image error fallback for projects without local assets */
-  document.addEventListener('error', (e) => {
-    const el = e.target;
-    if (el.tagName === 'IMG') {
-      el.style.opacity = '0';
-      el.parentElement?.classList.add('is-empty');
-    }
-  }, true);
-
   const slug = new URLSearchParams(location.search).get('p');
 
   const playerHTML = (p) => {
